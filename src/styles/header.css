@@ -1,0 +1,179 @@
+.header {
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+}
+
+.logo {
+  text-align: center;
+}
+.logo img {
+  height: 150px;
+  width: 150px;
+  object-fit: contain;
+  margin-top: -25px;
+  margin-left: 10px;
+  margin-right: 35px;
+}
+
+.logo h5 {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #212245;
+  margin-top: -40px;
+  margin-bottom: 0;
+}
+
+.menu a {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #212245;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  color: #999B84;
+}
+
+.menu a:active {
+  border-bottom: 3px solid #626546;
+  margin-top: -40px;
+}
+
+.active__menu {
+  color: #626546 !important;
+}
+
+.navigation{
+  margin-right: 60px;
+  margin-top: 2px;
+}
+
+.cart__icon i,
+.user i,
+.mobile__menu i {
+  font-size: 1.3rem;
+  color: #212245;
+  cursor: pointer;
+}
+
+.cart__icon {
+  position: relative;
+}
+
+.cart__badge {
+  position: absolute;
+  top: 30px;
+  right: -10px;
+  background: #999B84;
+  color: #FCF9F3;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  font-size: 0.8rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile__menu {
+  font-weight: 600;
+  display: none;
+}
+
+.header__shrink {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background: #FCF9F3;
+  z-index: 99999;
+  box-shadow: 5px 5px 15px -5px #FCF9F3;
+}
+
+.search-box{
+  min-width: 370px;
+  margin-top: -5px;
+  margin-right: 230px;
+  outline: none;
+}
+
+.search-box .btn{
+  transform: translate(-110%, 1%);
+}
+
+.search-box .btn:hover{
+  color: #626546;
+}
+
+.nav__right{
+  margin-top: -21px;
+}
+
+@media only screen and (max-width: 992px) {
+  .logo img {
+    width: calc(100% - 70%);
+  }
+  .logo h5 {
+    font-size: 0.8rem;
+    margin-top: -15px;
+  }
+
+  .navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.425);
+    z-index: 99;
+    display: none;
+  }
+
+  .menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    background: #FCF9F3;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    line-height: 20px;
+  }
+
+  .menu a {
+    font-size: 0.9rem;
+  }
+
+  .mobile__menu {
+    display: block;
+  }
+
+  .cart__icon i,
+  .user i,
+  .mobile__menu i {
+    font-size: 1rem;
+  }
+
+  .show__menu {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .header {
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+  }
+
+  .logo img {
+    margin-top: -70px !important;
+  }
+  .logo h5 {
+    margin-top: -55px;
+  }
+}
